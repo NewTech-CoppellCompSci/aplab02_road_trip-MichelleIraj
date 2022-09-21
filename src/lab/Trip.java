@@ -33,9 +33,11 @@ public class Trip {
 		 */
 		RoadTripLog trip = new RoadTripLog("Maryland 2022");
 		
+		//adds the distance and fuel 
 		trip.addDistance(358.4);
 		trip.addFuel(18.4);
 		
+		//prints out the info at that stop
 		System.out.println("Stop #1");
 		System.out.println("   " + trip.getTotalDistance());
 		System.out.println("   " + trip.getTotalFuel());
@@ -56,7 +58,11 @@ public class Trip {
 		trip.addDistance(108.6);
 		trip.addFuel(7.5);
 		
-		System.out.println(trip);
+		//prints out the final info
+		System.out.println("Trip: Maryland 2022" + "\n"
+		                   + "    Distance: " + trip.getTotalDistance() + "\n"
+		                   + "    Fuel Used: " + trip.getTotalFuel() + "\n"
+		                   + "    MPG: " + trip.getMPG());
 		
 	}
 	
